@@ -62,20 +62,29 @@ p {
   line-height: 1.7em;
 }
 
+#tategaki{
+  
+  
+  writing-mode: vertical-lr;
+  display:inline;
+  top: 10px;
+  color: #ff1493;
+}
+
 /* header */
 
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: #EE82EE;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 12px;
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: white;
+    color: #7B68EE;
     text-decoration: none;
   }
 }
@@ -244,4 +253,28 @@ aside {
     height: 100px;
     margin-bottom: 5px;
   }
+}
+
+.center.jumbotron{
+  // background-color: #f09199;
+  border-radius: 90px;
+  width: 800px;
+  margin: auto;
+  height: 520px;
+}
+
+.navbar-inverse{
+  background-color: #aa4c8f;
+}
+
+.waku{
+  background-image: url("NOU92_kyounomachiwonagameru_TP_V.jpg");
+  background-size: cover;
+}
+
+#messeage1{
+  h2{
+    color: #ee82ee;
+  }
+  
 }

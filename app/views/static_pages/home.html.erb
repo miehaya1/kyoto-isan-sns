@@ -13,23 +13,26 @@
       </section>
     </aside>
     <div class="col-md-8">
-      <h3>Micropost Feed</h3>
+      <h3>会員　何でも投稿</h3>
       <%= render 'shared/feed' %>
     </div>
   </div>
 <% else %>
-  <div class="center jumbotron">
-    <h1>Welcome to the Sample App</h1>
+  <div class="center jumbotron waku">
+    <h1>京都　世界遺産</h1>
+    <div id="tategaki">
+      <p>比叡山延暦寺</p> <p>宇治上神社</p> <p>平等院</p> <p>醍醐寺</p> <p>東寺</p> <p>西本願寺</p> <p>高山寺</p> <p>西芳寺</p>
+      <p>天龍寺</p> <p>龍安寺</p> <p>仁和寺</p> <p>二条城</p> <p>金閣寺</p> <p>銀閣寺</p> <p>清水寺</p> <p>下鴨神社</p> <p>上賀茂神社</p>
+    </div>
 
-    <h2>
-    This is the home page for the
-      <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
-    </h2>
-
-    <%= link_to "Sign up now!", new_user_registration_path,
+    <h2>京都には１７もの世界遺産があります</h2>
+    
+    <%= link_to "登録!", new_user_registration_path,
                                 class: "btn btn-lg btn-primary" %>
+    <div id="messeage1">                            
+      <h2>京都　世界遺産SNSへようこそ！　誰でも参加できます。</h2>  
+      <h2>情報交換や感想等　気軽に投稿してね！！</h2>
+    </div>
   </div>
 
-  <%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
 <% end %>
