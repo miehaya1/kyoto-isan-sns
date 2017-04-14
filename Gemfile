@@ -9,7 +9,7 @@ gem 'faker', '1.1.2'
 gem 'will_paginate', '3.0.4'
 gem 'will_paginate-bootstrap', '1.0.1'
 gem 'bcrypt-ruby','3.1.2'
-gem 'paperclip','4.2.0'
+gem 'paperclip', '~> 4.2.1'
 
 group :development do
   gem 'sqlite3', '1.3.9'
@@ -24,4 +24,9 @@ gem 'jbuilder', '1.5.3'
 
 group :doc do
   gem 'sdoc', '0.4.1', require: false
+end
+
+group :production do
+    gem 'pg'
+    gem 'rails_12factor'
 end

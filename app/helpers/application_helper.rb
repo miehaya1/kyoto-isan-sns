@@ -1,7 +1,7 @@
 module ApplicationHelper
      # ページ固有のタイトル有無でタイトルの文字列を調整して返す。
   def full_title(page_title)
-    base_title = "Ruby on Rails Tutorial Sample App"
+    base_title = "京都　世界遺産SNS"
     if page_title.empty?
       base_title
     else
